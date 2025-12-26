@@ -1,13 +1,17 @@
 
-import time, sys
+import time, sys, random, string
 
 indent = 0 # How many spaces to indent.
 indent_increasing = True # Whether the indentation is increasing or not.
+length = 8
+
+# random_str = random.choice(string.ascii_letters)
 
 try:
     while True: # The main program loop
+        random_str = random.choice(string.digits)
         print(' ' * indent, end='')
-        print('********')
+        print(random_str * random.randint(1,30))
         time.sleep(0.1) # Pause for 1/10th of a second.
 
         if indent_increasing:
