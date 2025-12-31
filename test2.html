@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  :root {
+    --obsidian: #1C1C1C;
+    --blood-orange: #E84A36;
+    --antique-bone: #F7F1D5;
+    --muted-teal: #5F9EA0;
+    --dusty-rose: #D99BA3;
+  }
+
+  body {
+    background-color: var(--obsidian);
+    color: var(--antique-bone);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    border-left: 5px solid var(--blood-orange);
+    padding: 30px;
+    background: linear-gradient(145deg, #252525, #1a1a1a);
+    max-width: 500px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+  }
+
+  h1 {
+    color: var(--blood-orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+  }
+
+  .accent-text {
+    color: var(--muted-teal);
+    font-weight: bold;
+  }
+
+  button {
+    background-color: transparent;
+    border: 1px solid var(--dusty-rose);
+    color: var(--dusty-rose);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: var(--blood-orange);
+    color: var(--obsidian);
+    border-color: var(--blood-orange);
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Crimson & Bone</h1>
+    <p>This design pulls from the <span class="accent-text">Teal mid-tones</span> 
+       and striking <span style="color: var(--dusty-rose)">Rose accents</span> 
+       found in the illustration.</p>
+    <button>Explore More</button>
+  </div>
+
+</body>
+</html>
