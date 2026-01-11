@@ -21,4 +21,21 @@ def delete_item(hero_inventory):
     
 
 
-delete_item(hero_inventory)
+
+chest = {"health potion" : 3,
+         "dragon_scale" : 1}
+
+def find_treasure(chest):
+    for item,amount in chest.items():
+        hero_inventory.setdefault(item, 0)
+        hero_inventory[item] += amount
+    print(hero_inventory)
+
+
+
+def search():
+    if 'mysterious map' in hero_inventory:
+        print("You know where to go")
+
+
+search()
